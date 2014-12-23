@@ -1,0 +1,10 @@
+@startuml
+
+!include firstchoicealgorithm.iuml
+!include solvingalgorithm.iuml
+!include randomalgorithm.iuml
+
+FirstChoiceAlgorithm --|> SolvingAlgorithm
+RandomAlgorithm --|> SolvingAlgorithm
+
+@enduml
