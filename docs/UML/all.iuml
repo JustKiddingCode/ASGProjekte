@@ -3,13 +3,32 @@ package "Algorithm" {
    !include firstchoicealgorithm.iuml
    !include solvingalgorithm.iuml
    !include randomalgorithm.iuml
+   !include statistic.iuml
 }
 package "Errors" {
    !include wrongcsvformat.iuml
    !include notenoughplaces.iuml
 }
+!include importcsv.iuml
+!include pupil.iuml
+!include project.iuml
+!include school.iuml
+package "GUI" {
+   !include mainwindow.iuml
+   !include statisticview.iuml
+}
 
 FirstChoiceAlgorithm --|> SolvingAlgorithm
 RandomAlgorithm --|> SolvingAlgorithm
+
+Pupil --* School
+Project --* School
+
+SolvingAlgorithm *-- Statistic
+SolvingAlgorithm -- NotEnoughPlaces : > uses
+
+ImportCSV -- WrongCSVFormat : > uses
+
+MainWindow *-- StatisticView
 
 @enduml

@@ -1,0 +1,3 @@
+class ImportCSV {
+	importFile(path) : python.csv.reader
+}

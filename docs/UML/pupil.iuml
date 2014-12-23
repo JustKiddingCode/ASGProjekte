@@ -1,0 +1,10 @@
+class Pupil {
+	id : int
+	prename : String
+	name : String
+	form : form
+	choice : Wishes
+	assignedProject : Project
+	
+
+}

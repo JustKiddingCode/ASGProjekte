@@ -1,0 +1,7 @@
+class Statistic {
+	algorithm : SolvingAlgorithm
+	-firstChoice : int
+	-secondChoice : int
+	-thirdChoice : int
+	
+}

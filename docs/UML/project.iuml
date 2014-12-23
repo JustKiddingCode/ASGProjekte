@@ -1,0 +1,12 @@
+class Project {
+	name : String
+	id : String
+	pupilCounter : int
+	maxPupil : int
+	minGrade : int
+	maxGrade : int
+	typ : Projekttyp
+	teacher : Teacher
+	pupils : List of Pupil
+
+}

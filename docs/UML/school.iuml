@@ -1,0 +1,11 @@
+class School {
+	teachers : List of Teachers
+	pupils : List of Pupils
+	projects : List of Projects
+	
+	pupilsToProjects : List of Pupils
+	excludedPupils : List of Pupils
+
+	excludePupils(form : Form)
+
+}
