@@ -1,8 +1,13 @@
 @startuml
-
-!include firstchoicealgorithm.iuml
-!include solvingalgorithm.iuml
-!include randomalgorithm.iuml
+package "Algorithm" {
+   !include firstchoicealgorithm.iuml
+   !include solvingalgorithm.iuml
+   !include randomalgorithm.iuml
+}
+package "Errors" {
+   !include wrongcsvformat.iuml
+   !include notenoughplaces.iuml
+}
 
 FirstChoiceAlgorithm --|> SolvingAlgorithm
 RandomAlgorithm --|> SolvingAlgorithm
