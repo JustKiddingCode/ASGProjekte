@@ -14,10 +14,13 @@ package "Errors" {
 !include project.iuml
 !include school.iuml
 !include projecttyp.iuml
+!include teacher.iuml
 
 package "GUI" {
    !include mainwindow.iuml
    !include statisticview.iuml
+   !include aboutview.iuml
+   !include licenceview.iuml
 }
 
 FirstChoiceAlgorithm --|> SolvingAlgorithm
@@ -25,6 +28,7 @@ RandomAlgorithm --|> SolvingAlgorithm
 
 Pupil --* School
 Project --* School
+Project o-- Teacher
 
 SolvingAlgorithm *-- Statistic
 SolvingAlgorithm -- NotEnoughPlaces : > uses
@@ -34,4 +38,12 @@ ImportCSV -- WrongCSVFormat : > uses
 MainWindow *-- StatisticView
 Project "1" *-- "1" Projecttyp
 
+ImportCSV -- Pupil : > uses
+ImportCSV -- Project : > uses
+
+MainWindow -- ImportCSV
+
+MainWindow -- SolvingAlgorithm
+MainWindow *-- LicenceView
+MainWindow *-- AboutView
 @enduml

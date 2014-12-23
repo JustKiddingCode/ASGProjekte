@@ -1,3 +1,5 @@
 class ImportCSV {
 	importFile(path) : python.csv.reader
+	getPupil() : List of Pupil
+	getProjects() : List of Projects
 }

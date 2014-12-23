@@ -1,3 +1,4 @@
 class MainWindow {
+	algorithms : List of SolvingAlgorithm
 	openStatistic()
 }
