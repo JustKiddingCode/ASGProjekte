@@ -13,6 +13,8 @@ package "Errors" {
 !include pupil.iuml
 !include project.iuml
 !include school.iuml
+!include projecttyp.iuml
+
 package "GUI" {
    !include mainwindow.iuml
    !include statisticview.iuml
@@ -30,5 +32,6 @@ SolvingAlgorithm -- NotEnoughPlaces : > uses
 ImportCSV -- WrongCSVFormat : > uses
 
 MainWindow *-- StatisticView
+Project "1" *-- "1" Projecttyp
 
 @enduml

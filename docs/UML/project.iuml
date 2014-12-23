@@ -5,7 +5,7 @@ class Project {
 	maxPupil : int
 	minGrade : int
 	maxGrade : int
-	typ : Projekttyp
+	typ : Projecttyp
 	teacher : Teacher
 	pupils : List of Pupil
 
