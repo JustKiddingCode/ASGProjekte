@@ -43,6 +43,8 @@ ImportCSV -- Project : > uses
 
 MainWindow -- ImportCSV
 
+MainWindow -- School
+ImportCSV -- School
 MainWindow -- SolvingAlgorithm
 MainWindow *-- LicenceView
 MainWindow *-- AboutView
